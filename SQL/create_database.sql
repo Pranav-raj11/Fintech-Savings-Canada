@@ -61,6 +61,17 @@
 --     value DECIMAL(20,2)
 -- );
 
+-- CREATE TABLE popular_banks (
+-- 	bank VARCHAR(50),
+--     launch_year YEAR,
+--     users_downloads_play_store INT,
+--     google_play_store_ratings INT ,
+--     google_play_store_rating DECIMAL(2,1),
+--     apple_store_ratings INT,
+--     apple_store_rating DECIMAL(2,1),
+--     apple_chart_rank INT
+-- );
+
 -- INSERT INTO biggest_fintech VALUES ('EQ Bank', 2016, 100000, 10500, 4.2, 46000, 4.8, 51);
 -- INSERT INTO biggest_fintech VALUES ('KOHO', 2015, 1000000, 70100, 4.4, 81000, 4.8, 15);
 -- INSERT INTO biggest_fintech VALUES ('Neo', 2020, 100000, 12900, 4.7, 47000, 4.8, 37);
@@ -81,4 +92,4 @@
 -- INSERT INTO fintech_rates VALUES ('Wealthsimple', 'First Home Savings Account', 'FHSA (HISA)', 'flat', 0.0275, 0, NULL, 0, 0, '0.00', 'Daily');
 
 -- truncate table simplified_traditional_rates
-select * from simplified_traditional_rates
+select * from popular_banks limit 400
